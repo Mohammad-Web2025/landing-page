@@ -1,0 +1,1127 @@
+body{
+    font-family: b-yekan;
+    direction: rtl;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+@font-face {
+    font-family: "b-yekan";
+    src: url(font/B_Yekan/Yekan.ttf);
+}
+main{
+    width: 98%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+header{
+    width: 60%;
+    display: flex;
+    flex-direction: row;
+    background-color: transparent;
+    position: fixed;
+    top: 25px;
+    transition: 0.3s;
+}
+header.scrolled {
+    background-color: rgb(245, 245, 245);
+    height: 70px;
+    border-radius: 15px;
+    padding: 0 20px;
+    border: 0.5px solid lightgrey;
+    z-index: 9999;
+}
+header .heade-item1{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    width: 70%;
+    padding: 0 10px;
+}
+header .heade-item2{
+    display: flex;
+    flex-direction: row-reverse;
+    align-items: center;
+    justify-content: flex-start;
+    gap: 0;
+    width: 25%;
+}
+.heade-item2 div {
+    padding: 10px 18px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    width: 50%; /* هر کدام نصف فضا */
+    border: 0.4px solid lightgray;
+}
+#sabtenam {
+    border-radius: 15px 0 0 15px;
+    flex-direction: row-reverse;
+    gap: 8px;
+      background-color: rgb(74, 9, 244);
+  color: white;
+}
+
+#login {
+    border-radius: 0 15px 15px 0;
+    border: 0.4px solid lightgray;
+}
+.main-content{
+    margin-top: 70px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 65%;
+}
+.main-content div{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 40%;
+    font-weight: bold;
+}
+.main-content div #button1-main{
+    width: 35%;
+    height: 50px;
+    border: none;
+    border-radius: 15px;
+    font-size: 17px;
+    font-weight: bold;
+}
+.main-content div #button2-main{
+    width: 60%;
+    background-color: rgb(74 9 244);
+    height: 50px;
+    border-radius: 15px;
+    border: none;
+    color: white;
+    font-size: 19px;
+    font-weight: bold;
+}
+.main-content #title{
+    font-size: 45px;
+    font-weight: bold;
+}
+.main-content #name {
+    padding: 4px 6px;
+    border-radius: 6px;
+}
+.pages{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    width: 65%;
+    margin-top: 80px;
+}
+.top-page-main{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    font-size: 25px;
+    width: 70%;
+}
+.text-top-main{
+    width:20%;
+    border-radius: 20px;
+    height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.berand-more{
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: center;
+    align-items: center;
+    font-size: 20px;
+    width:45%;
+    margin: 25px 0;
+    color: grey;
+    padding: 25px;
+}
+.list-options{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    background-color: rgb(248 250 252);
+    width: 70%;
+    margin-bottom: 25px;
+    padding: 50px;
+    border: 0.7px solid lightgray;
+    border-radius: 15px;
+}
+.items-list{
+    width: 28%;
+    display: flex;
+    flex-direction: column;
+    padding: 0 20px;
+    align-items: center;
+    justify-content: center;
+    height: 280px;
+}
+.items-list:hover{
+    background-color: white;
+    border: 1px solid lightgray;
+    border-radius: 10px;
+}
+.items-list img{
+    width: 35%;
+    height: 100px;
+    margin: 15px 0;
+}
+.items-list h2{
+    font-size: 20px;
+    margin-bottom: -5px;
+    margin-top: -5px;
+}
+.items-list p{
+    font-size: 17px;
+    text-align: justify;
+}
+.main-page2{
+    background-color: rgb(255, 255, 255);
+    width: 70%;
+    padding: 50px;
+    display: flex;
+    flex-direction: row-reverse;
+    align-items: center;
+    justify-content: space-around;
+}
+.main-page2 .left-main-page2{
+    width: 50%;
+    padding-right: 70px;
+}
+.main-page2 .left-main-page2 .items-left-main{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 90%;
+    margin-bottom: -20px;
+}
+.main-page2 .left-main-page2 .items-left-main p{
+    width: 93%;
+    font-size: 17px;
+    font-weight: bold;
+}
+.main-page2 .left-main-page2 .items-left-main div{
+    width: 5%;
+    display: flex;
+    align-items: center;
+    justify-content: right;
+}
+.right-main-page2{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 50%;
+    aspect-ratio: 1/1;/*این باعث می‌شود ارتفاع و عرض المان برابر باشند*/
+}
+.right-main-page2 div{
+background-color: #f7f9f9;
+border-radius: 50%;
+width: 70%;
+display: flex;
+align-items: center;
+justify-content: center;
+}
+.right-main-page2 div img {
+    width: 100%;
+    transform: scale(0.3); /* کوچک */   /*عکس را نیمه کوچک (۵۰٪ اندازه واقعی) قرار می‌دهد.*/
+    opacity: 0;/*🔹 عکس کاملاً نامرئی است.*/
+    transition: transform 0.8s ease, opacity 0.8s ease;/*مشخص می‌کند که زمان تغییر scale و opacity چقدر طول بکشد و با چه ریتمی (ease = نرم) انجام شود.
+🔹 یعنی وقتی کلاس show اضافه شود، عکس به آرامی بزرگ و ظاهر می‌شود.*/
+}
+.right-main-page2.show div img {
+    transform: scale(1.2); /* اندازه واقعی */ /* عکس به اندازه واقعی خودش بزرگ می‌شود (scale(1))*/
+    opacity: 1;/*کاملاً قابل دیدن می‌شود (opacity: 1)*/
+}
+.main-page3{
+    background-color: rgb(255, 255, 255);
+    width: 70%;
+    padding: 50px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+}
+.main-page3 .left-main-page2{
+    width: 50%;
+    padding-right: 70px;
+}
+.main-page3 .left-main-page2 .items-left-main{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 85%;
+    margin-bottom: -20px;
+}
+.main-page3 .left-main-page2 .items-left-main p{
+    width: 93%;
+    font-size: 17px;
+    font-weight: bold;
+}
+.main-page3 .left-main-page2 .items-left-main div{
+    width: 5%;
+    display: flex;
+    align-items: center;
+    justify-content: right;
+}
+.right-main-page3{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 50%;
+    /*aspect-ratio: 1/1;/*این باعث می‌شود ارتفاع و عرض المان برابر باشند*/
+}
+.right-main-page3 div{
+background-color: #f7f9f9;
+border-radius: 50%;
+width: 70%;
+display: flex;
+align-items: center;
+justify-content: center;
+}
+.right-main-page3 div img {
+    width: 100%;
+    transform: scale(0.3); /* کوچک */   /*عکس را نیمه کوچک (۵۰٪ اندازه واقعی) قرار می‌دهد.*/
+    opacity: 0;/*🔹 عکس کاملاً نامرئی است.*/
+    transition: transform 0.8s ease, opacity 0.8s ease;/*مشخص می‌کند که زمان تغییر scale و opacity چقدر طول بکشد و با چه ریتمی (ease = نرم) انجام شود.
+🔹 یعنی وقتی کلاس show اضافه شود، عکس به آرامی بزرگ و ظاهر می‌شود.*/
+}
+.right-main-page3.show img {
+    transform: scale(1.2); /* اندازه واقعی */ /* عکس به اندازه واقعی خودش بزرگ می‌شود (scale(1))*/
+    opacity: 1;/*کاملاً قابل دیدن می‌شود (opacity: 1)*/
+}
+#main-video{
+    width: 65%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin: 50px 0;
+}
+.comment{
+    width: 60%;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    background-color: #f8fafc;
+    border-radius: 20px;
+    margin: 20px 0;
+}
+.comment .top-button{
+    width: 15%;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    margin: 20px 0;
+}
+.dot-small{
+    width: 15px;
+    height: 15px;
+    background-color: rgba(79,93,117,.15);
+    border-radius: 50%;
+    border: none;
+    cursor: pointer;
+}
+.dot-small:hover{
+    background-color: black;
+}
+.comment .bottom-comment{
+    width: 100%;
+    margin: 25px 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.comment .bottom-comment .users-comment{
+    display: none;
+    align-items: center;
+    justify-content: space-around;
+    width: 90%;
+    padding: 0 25px;
+}
+.comment .bottom-comment .users-comment .image-user{
+    width: 10%;
+}
+.comment .bottom-comment .users-comment .image-user img{
+    width: 100%;
+}
+.text-user{
+    width: 80%;
+    display: flex;
+    align-items: start;
+    flex-direction: column;
+}
+.text-user p{
+    color: grey;
+    text-align: justify;
+}
+.more-user{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 40%;
+    margin-top: -15px;
+}
+.more-user p{
+    color: rgb(167 175 187);
+}
+.optiopns-main-page4{
+    width: 60%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin: 25px 0;
+}
+.optiopns-main-page4 .top-main-page-options{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+}
+.optiopns-main-page4 .top-main-page-options h4{
+    font-size: 25px;
+
+}
+.optiopns-main-page4 .top-main-page-options p{
+    font-size: 19px;
+    margin-top: -19px;
+}
+.optiopns-main-page4 .bottom-main-page-options{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    margin-top: 15px;
+}
+.optiopns-main-page4 .bottom-main-page-options .options-text{
+    width: 23%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.optiopns-main-page4 .bottom-main-page-options .options-text .image-option{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+.optiopns-main-page4 .bottom-main-page-options .options-text .info-text{
+    display: flex;
+    flex-direction: column;
+    
+    align-items: start;
+}
+
+/* کانتینر اصلی */
+.login-main-page5 {
+    background: linear-gradient(120deg, #4b23ff, #692cff);
+    width: 60%;
+    border-radius: 25px;
+    display: flex;                 /* دو آیتم کنار هم */
+    justify-content: space-between;
+    align-items: end;
+    flex-direction: row-reverse;
+    position: relative;           /* برای کنترل SVG */
+    overflow: hidden;
+    height: 350px;
+    margin: 50px 0;
+}
+.login-main-page5::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+    background-image: url("image/download.svg");
+    background-repeat: no-repeat;
+    background-position: right center;
+    background-size: 90%;
+    opacity: 0.8;
+    z-index: 1;                    /* پشت همه چیز */
+}
+
+/* متن و تصویر (بیان جلوتر از SVG) */
+.login-main-page5 .login-info-text,
+.login-main-page5 .image-login-main {
+    position: relative;
+    z-index: 2;                    /* جلوتر از svg */
+}
+
+/* بخش توضیحات */
+.login-main-page5 .login-info-text {
+    width: 70%;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    padding-right: 50px;
+    color: white;
+    padding-bottom: 64px;
+}
+.login-main-page5 .login-info-text h4 {
+    font-size: 35px;
+    line-height: 1.2; /* یا مثلا 1.1 / 1 بسته به طراحی */
+    margin: 0; /* اگر لازم بود */
+}
+
+.login-main-page5 .login-info-text h6 {
+    font-size: 25px;
+    line-height: 1.8;
+    margin: 0; /* در صورت نیاز کم/حذف کن */
+}
+
+.login-main-page5 .login-info-text .option-login{
+    display: flex;
+    width: 45%;
+    align-items: center;
+    justify-content: space-between;
+    font-size: 25px;
+    line-height: 1.2;
+}
+.login-form{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: #3e28a6;
+    width: 70%;
+    height: 55px;
+    border-radius: 10px;
+}
+.login-form input{
+    width: 60%;
+    border: none;
+    height: 40px;
+    background-color: #3e28a6;
+    font-size: 15px;
+    color: white;
+    padding-right: 25px;
+    font-weight: bold;
+}
+.login-form input:focus{
+    border: none;
+    outline: none;
+}
+.login-form button{
+    font-size: 15px;
+    width: 20%;
+    border: none;
+    background-color: white;
+    color:#4b23ff;
+    border-radius: 10px;
+    height: 40px;
+    margin-left: 10px;
+    font-weight: bold;
+}
+/* بخش عکس */
+.login-main-page5 .image-login-main {
+    width: 40%;
+    display: flex;
+    justify-content: center;
+}
+
+/* خود عکس */
+.login-main-page5 .image-login-main img {
+    width: 100%;
+}
+.main-page6{
+    width: 60%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 25px 0;
+}
+.main-page6 .top-main-page6{
+    display: flex;
+    width: 95%;
+    align-items: center;
+    justify-content: space-between;
+}
+.main-page6 .bottom-main-page6{
+    width: 95%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.main-page6 .bottom-main-page6 .more-shopp{
+    width: 30%;
+    height: 270px;
+    padding: 10px;
+}
+.main-page6 .bottom-main-page6 .more-shopp:hover{
+    border: 1px solid lightgrey;
+    border-radius: 15px;
+}
+.main-page6 .bottom-main-page6 .more-shopp img{
+    width: 100%;
+    border-radius: 15px;
+}
+.main-page6 .bottom-main-page6 .more-shopp p{
+    font-size: 18px;
+    text-align: justify;
+    line-height: 30px;
+}
+.main-page7{
+    background-color: rgb(248 250 252);
+    width: 60%;
+    border-radius: 15px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 10px;
+    height: 90px;
+}
+.main-page7 .right-main-page7{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    width: 27%;
+}
+.main-page7 .right-main-page7 a{
+    background-color: white;
+    width: 12%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    padding: 5px;
+    box-shadow: 2px 2px 15px black;
+}
+.main-page7 .left-main-page7{
+    width: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+.main-page7 .left-main-page7 .text-one{
+    width: 50%;
+    padding: 5px;
+    background-color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 30px;
+    border-radius: 10px;
+    box-shadow: 2px 2px 15px black;
+}
+.main-page7 .left-main-page7 .text-two{
+    width: 30%;
+    padding: 5px;
+    background-color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 30px;
+    border-radius: 10px;
+    box-shadow: 2px 2px 15px black;
+}
+.main-page7 .left-main-page7 .text-one:hover{
+    box-shadow: none;
+}
+.main-page7 .left-main-page7 .text-two:hover{
+    box-shadow: none;
+}
+.main-page7 .right-main-page7 a:hover{
+    box-shadow: none;
+}
+.main-page8{
+    width: 60%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 10px;
+    margin: 50px 0;
+}
+.main-page8 .right-main-8{
+    display: flex;
+    align-items: start;
+    width: 65%;
+    justify-content: space-between;
+
+}
+.main-page8 .right-main-8 .text-info-main8{
+    width: 24%;
+}
+.main-page8 .left-main-8{
+    width: 20%;
+    font-size: 15px;
+    font-weight: 100;
+
+}
+.main-page8 .left-main-8 .top-main8{
+    display: flex;
+    justify-content: center;
+}
+.main-page8 .left-main-8 .bottom-main8{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    width: 100%;
+    margin: 15px 0;
+}
+.main-page9{
+    width: 60%;
+    margin: 15px 0 30px 0;
+}
+.main-page9 p{
+    text-align: justify;
+    font-size: 15px;
+    line-height: 1.5;
+    margin-top: -5px;
+    font-weight: 700;
+    color: lightslategray;
+}
+.more-button-main-page9{
+    border: none;
+    width: 12%;
+    font-size: 14px;
+    color: rgb(255, 255, 255);
+    font-weight: bold;
+    background-color: #4b23ff;
+    text-align: center;
+    height: 35px;
+    border-radius: 10px;
+    padding: 8px 15px;
+    width: 15%;
+    margin-top: 5px;
+}
+.text-more-main-page9{
+    display: none;
+}
+.text-more-main-page9 h4{
+    color: black;
+    height: 0.2;
+    font-size: 18px;
+    margin: 17px 0;
+}
+.text-more-main-page9 p{
+    text-align: justify;
+    font-size: 15px;
+    line-height: 1.5;
+    margin-top: -2px;
+    font-weight: 700;
+    color: lightslategray;
+}
+
+#hrs{
+    width: 60%; 
+    color: #e3eff7;
+}
+#menu-btn {
+    background: none;
+    border: none;
+    cursor: pointer;
+    display: none;
+}
+
+#open-menu {
+    position: fixed;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    width: 40%;
+    background: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    font-size: 20px;
+    transform: translateX(100%);
+    transition: transform 0.7s ease;
+}
+#open-menu p:hover{
+    background-color: rgb(224, 224, 224);
+    width: 90%;
+    text-align: center;
+    border-radius: 12px;
+    padding: 2px 10px;
+    font-size: 22px;
+}
+#but-close{
+    width: 20%;
+    color: red;
+    margin: 5px 0;
+}
+#but-close:hover{
+    width: 30%;    
+}
+#open-menu.active {
+    transform: translateX(0);
+}
+
+
+
+#text-main-content{
+    font-size: 32px; margin-bottom: -10px; margin-top: -15px
+}
+#info-main-content{
+    color: gray; font-size: 23px; text-align: center
+}
+
+
+
+.but-top-page{
+    background-color: #4b23ff;
+    color: black;
+    display: none;
+    position: fixed;
+    bottom: 10px;
+    right: 10px;
+    width: 40px;
+    height: 40px;
+    padding: 5px;
+    border-radius: 10px;
+}
+#icon-top{
+    color: white;
+    height: 35px;
+    width: 100%;
+}
+@media (max-width: 1500px) {
+    header{
+        width: 92%;
+    }
+    .main-content{
+        width: 100%;
+    }
+    .main-content div{
+        width: 50%;
+    }
+    .pages{
+        width: 95%;
+    }
+    .berand-more{
+        width: 60%;
+    }
+    .list-options{
+        width: 95%;
+        justify-content: space-between;
+        padding: 30px 15px;
+    }
+    .items-list{
+        width: 30%;
+        height: 350px;
+    }
+    .main-page2{
+        width: 98%;
+        padding: 0;
+    }
+    .main-page3{
+        width: 90%;
+    }
+    #main-video{
+        width: 98%;
+    }
+    .comment{
+        width: 90%;
+    }
+    .top-button{
+        width: 95%;
+    }
+    .more-user{
+        width: 50%;
+        text-align: center;
+    }
+    .optiopns-main-page4{
+        width: 90%;
+    }
+    .bottom-main-page-options{
+        width: 98%;
+    }
+    .options-text{
+        height: 350px;
+        width: 23%;
+        padding: 10px 20px;
+    }
+    .image-option{
+        height: 100px;
+    }
+    .optiopns-main-page4 .bottom-main-page-options .options-text .info-text{
+        height: 250px;
+        padding-top: 20px;
+    }
+    .login-main-page5{
+        width: 98%;
+    }
+    .login-main-page5 .login-info-text .option-login{
+        width: 60%;
+    }
+    .main-page6{
+        width: 98%;
+    }
+    .main-page6 .bottom-main-page6 .more-shopp p{
+        text-align: center;
+    }
+
+    .main-page7{
+        width: 95%;
+    }
+    .main-page7 .left-main-page7 .text-one{
+        width: 60%;
+    }
+    .main-page8{
+        width: 95%;
+    }
+    #hrs{
+        width: 98%;
+    }
+    .main-page9{
+        width: 95%;
+    }
+    #text-end-web{
+        width: 80%;
+        text-align: center;
+    }
+}
+@media (max-width: 920px){
+    main{
+        width: 90%;             
+    }
+    header{
+        width: 85%;
+    }
+    #menu-btn {
+        display: block;
+    }
+    #sabtenam{
+        display: none;
+    }
+    #login{
+        display: none;
+    }
+    .heade-item1 p{
+        display: none;
+    }
+    .main-content{
+        text-align: center;
+    }
+    .main-content #title{
+        font-size: 35px;
+    }
+    .main-content #text-main-content{
+        font-size: 20px;
+    }
+    .main-content #info-main-content{
+        font-size: 16px;
+    }
+    .main-content div{
+        width: 100%;
+        flex-direction: column;
+    }
+    .main-content div #button1-main{
+        width: 70%;
+        margin: 20px 0;
+    }
+    .main-content div #button2-main{
+        width: 70%;
+    }
+    .pages{
+        width: 100%;
+    }
+    .top-page-main{
+        width: 100%;
+        justify-content: space-between;
+    }
+    .text-top-main{
+        width: 24%;
+        align-items: center;
+        justify-content: center;
+        font-size: 20px;
+    }
+    .bot-page-main{
+        width: 98%;
+        
+    }
+    .bot-page-main-img{
+        width: 98%;
+    }
+    .berand-more{
+        width: 95%;
+    }
+    
+    #titer{
+        font-size: 18px;
+    }
+    .list-options{
+        width: 90%;
+        flex-direction: column;
+    }
+    .items-list{
+        width: 85%;
+    }
+    .main-page2{
+        width: 90%;
+        flex-direction: column-reverse;
+        margin: 30px 0;
+    }
+    .main-page2 .left-main-page2 {
+        width: 98%;
+        padding: 0;
+        margin: 30px 0;
+    }
+    .main-page2 .left-main-page2  .items-left-main{
+        width: 95%;
+    }
+    .right-main-page2{
+        width: 98%;
+        
+    }
+    .right-main-page2 img{
+        width: 100%;
+    }
+    .main-page3{
+        width: 90%;
+        flex-direction: column-reverse;
+        margin: 30px 0;
+    }
+    .main-page3 .left-main-page2{
+        width: 98%;
+        padding: 0;
+        margin: 30px 0;
+    }
+    .right-main-page3{
+        width: 98%;
+    }
+    .right-main-page3 img{
+        width: 100%;
+    }
+    #main-video{
+        width: 98%;
+        text-align: center;
+    }
+    .comment .top-button{
+        width: 45%;
+    }
+    .bottom-comment .users-comment{
+        flex-direction: column;
+    }
+    .comment .bottom-comment .users-comment .image-user{
+        width: 50%;
+    }
+    .comment .bottom-comment .users-comment .image-user img{
+        border-radius: 20px;
+    }
+    .more-user{
+        width: 100%;
+        align-items: center;
+    }
+    .optiopns-main-page4{
+        width: 90%;
+        text-align: center;
+    }
+    .optiopns-main-page4 .bottom-main-page-options{
+        flex-direction: column;
+    }
+    .optiopns-main-page4 .bottom-main-page-options .options-text{
+        width: 60%;
+    }
+    #image-ekhtesasi{
+        justify-content: right;
+    }
+    .login-main-page5{
+        flex-direction: column-reverse;
+        height: 550px;
+        align-items: center;
+        padding-top: 25px;
+    }
+    .login-main-page5 .image-login-main{
+        width: 100%;     
+        display: flex;   
+        align-items: end;
+        justify-content: left;
+    }
+    .login-main-page5 .image-login-main img{
+        width: 80%;
+    }
+    .login-main-page5 .login-info-text{
+        align-items: center;
+        justify-content: center;
+        width: 90%;
+        padding-right: 0;
+    }
+    .login-main-page5 .login-info-text h4{
+        font-size: 20px;
+        text-align: center;
+    }
+    .login-main-page5 .login-info-text h6{
+        font-size: 20px;
+        text-align: center;
+    }
+    .login-main-page5 .login-info-text .option-login{
+        width: 80%;
+        align-items: center;
+    }
+    .login-main-page5 .login-info-text .login-form{
+        width: 90%;
+    }
+    .main-page6{
+        width: 98%;
+        
+    }
+    .main-page6 .bottom-main-page6{
+        flex-direction: column;
+        align-items: center;
+    }
+    .main-page6 .bottom-main-page6 .more-shopp{
+        width: 80%;
+        margin: 20px 0;
+    }
+    .main-page7{
+        width: 90%;
+        flex-direction: column;
+        margin-bottom: 80px;
+        height: 250px;
+    }
+    .main-page7 .right-main-page7{
+        width: 90%;
+        height: 80px;
+    }
+    .main-page7 .left-main-page7{
+        width: 90%;
+        flex-direction: column;
+        height: 160px;
+    }
+    .main-page7 .left-main-page7 .text-one{
+        width: 70%;
+    }
+    .main-page7 .left-main-page7 .text-two{
+        width: 70%;
+        margin-bottom: 5px;
+    }
+    .main-page8{
+        width: 98%;
+        flex-direction: column;
+    }
+    .main-page8 .right-main-8{
+        display: flex;
+        width: 95%;
+        flex-wrap: wrap;
+        align-items: center;
+        justify-content: center;
+        padding: 0;
+        margin-bottom: 10px;
+    }
+    .main-page8 .right-main-8 .text-info-main8{
+        width: 50%;
+    }
+    .main-page8 .left-main-8{
+        width: 80%;
+        margin-top: 35px;
+    }
+    .more-button-main-page9{
+        width: 50%;
+    }
+    #text-end-web{
+        width: 98%;
+        text-align: center;
+    }
+}
