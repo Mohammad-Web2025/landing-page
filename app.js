@@ -40,8 +40,6 @@ window.addEventListener("scroll", function () {
   else nav.classList.remove("scrolled");
 });
 
-
-
 //عکس از کوچک به بزرگ تبدیل شود با انیمیشن
 const section = document.querySelectorAll(".right-main-page2"); //document.querySelector() می‌رود داخل صفحه‌ی HTML و اولین المانی که کلاس right-main-page2 دارد را پیدا می‌کند.
 const section2 = document.querySelectorAll(".right-main-page3");
@@ -202,4 +200,14 @@ window.addEventListener("scroll", () => {
 buttontop.addEventListener("click", () => {
   //اگر روی دکمه کلیک شد
   window.scrollTo({ top: 0, behavior: "smooth" }); //بیاد صفحه مون بره به اول صفحه و این اتافق ارام انجام شود نه یهویی
+});
+
+const elemload = document.querySelector(".loader-wrapper");
+const main = document.querySelector("main");
+window.addEventListener("load", () => {
+  elemload.style.display = "block";
+  setTimeout(() => {
+    elemload.style.display = "none";
+    main.style.display = "flex";
+  }, 5000);
 });
